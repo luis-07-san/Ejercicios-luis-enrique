@@ -1,9 +1,13 @@
-let cal  = parseInt(prompt("ingrese la calificacion"))
-if (cal >= 7){
-    console.log ("Aprobado")
+let cal = parseInt(prompt("Ingrese la calificación:"));
+
+if (cal >= 7) {
+    console.log("Aprobado");
 } else {
-    console.log ("Reprobado")
+    console.log("Reprobado");
 }
-let resultado = cal > 6 ? "bien":
-cal > 8 ?  "muy bien": "excente"
-console.log (resultado);
+
+let resultado = cal > 8 ? "muy bien" :
+                 cal > 6 ? "bien" :
+                 "excelente";
+
+console.log(resultado);
